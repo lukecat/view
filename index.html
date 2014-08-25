@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>電力量</title>
+
+<script language="javascript" type="text/javascript" src="./script/jquery-1.9.1.js"></script>
+<!--[if lt IE 9]>
+    <script language="javascript" type="text/javascript" src="./script/excanvas.min.js"></script>
+<![endif]-->
+<script language="javascript" type="text/javascript" src="./script/jquery.jqplot.min.js"></script>
+<script language="javascript" type="text/javascript" src="./script/jqplot.barRenderer.min.js"></script>
+<script language="javascript" type="text/javascript" src="./script/jqplot.categoryAxisRenderer.min.js"></script>
+<script language="javascript" type="text/javascript" src="./script/jqplot.canvasTextRenderer.min.js"></script>
+<script language="javascript" type="text/javascript" src="./script/jqplot.canvasAxisLabelRenderer.min.js"></script>
+<script language="javascript" type="text/javascript" src="./script/main.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/jquery.jqplot.min.css" />
+<link rel="stylesheet" type="text/css" href="./css/main.css" />
+
+</head>
+
+<body>
+
+
+
+<table border="0" cellspacing="0">
+<tr>
+<td id="tab1" class="tab_front" onclick="tabClick(1);">本日の集計</td>
+<td id="tab2" class="tab_back" onclick="tabClick(2);">1週間の日別集計</td>
+<td id="tab3" class="tab_back" onclick="tabClick(3);">1ヶ月ごとの日集計</td>
+<td class="tab_blank">&nbsp;</td>
+</td>
+</tr><tr>
+<td colspan="4" class="main">
+	<table>
+	<td style="width:25px;">&nbsp;</td><td>
+	<div style="height:10px;">&nbsp;</div>
+	<div id="valtable" style="height:50px;width:600px;padding:0px;"></div>
+	<div id="label" style="width:600px;padding:0px;"></div>
+	<div id="chart" style="height:300px;width:600px;"></div>
+	<div id="update" style="width:600px;height:30px;text-align:right;line-height:300%;font-size:9pt;color:#666666;"></div>
+	</td></tr></table>
+	
+</td>
+</tr>
+</table>
+
+
+<script type="text/javascript">setChartLabel();</script>
+<script type="text/javascript">getCsvData();</script>
+
+
+</body>
+</html>
+
